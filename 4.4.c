@@ -34,7 +34,7 @@ int main()
 
 	while(1)
 	{
-		printf("Client: "); //Mesej untuk server
+		printf("Client: "); 
 		fgets(buffer,100,stdin);
 		if(strncmp(buffer,"bye",3) == 0)
 		break;
@@ -51,7 +51,7 @@ int main()
 			exit(1);
 		}
 
-		printf("\nServer: %s",buffer); //Mesej dari server
+		printf("\nServer: %s",buffer); 
 	}
 
 	close(sock_desc);
